@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+</head>
+<body>
+    <h1>Registrazione sito internet</h1>
+    <form action="">
+    <div>
+        <input type="text" name="nome" placeholder="Insersci il tuo nome" required minlength="2">
+    </div>
+
+    <div>
+        <input type="text" name="cognome" placeholder="Insersci il tuo cognome" required>
+    </div>
+
+    <div>
+        <input type="email" name="email" placeholder="Insersci la tua email" required>
+    </div>
+
+    <div>
+       <select name="Città">
+           <option value="">Napoli</option>
+           <option value="">Roma</option>
+           <option value="">Milano</option>
+       </select>
+    </div>
+
+    <div>
+        <input type="radio" name="età" id="0-18" value="0-18" required>
+        <label for="0-18">0-18</label>
+        <input type="radio" name="età" id="18+" value="18+" required>
+        <label for="18+">+18</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="termini e condizioni" id="termini" required>
+        <label for="termini">Accetta termini e condizioni</label>
+    </div>
+
+    <div>
+        <input type="submit" name="invia">
+    </div>
+</form>
+</body>
+</html>

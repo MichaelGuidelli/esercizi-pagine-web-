@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWSLETTER SIGN UP</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="form">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="info-line-div">
+          <img src="./images/icon-list.svg" alt="" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="info-line-div">
+          <img src="./images/icon-list.svg" alt="" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="info-line-div">
+          <img src="./images/icon-success.svg" alt="" />
+          <p>And much more!</p>
+        </div>
+
+        <form action="./successpage.html">
+          <div class="labeled-email-div">
+            <div class="label-and-error-message">
+              <label for="email">Email address</label>
+              <p id="error-message">Valid email required</p>
+            </div>
+            <input
+              onkeyup="errorMessageEmail(); return false"
+              type="email"
+              id="email-input"
+              class="email"
+              name="email"
+              placeholder="email@company.com"
+              required
+            />
+          </div>
+
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <img
+        class="illustration"
+        src="./images/illustration-sign-up-desktop.svg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

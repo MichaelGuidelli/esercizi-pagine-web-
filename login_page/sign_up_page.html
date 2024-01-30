@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="app.js"></script>
+<body>
+   
+    <div class="sfondo">
+        <div class="onda -uno"></div>
+        <div class="onda -due"></div>
+        <div class="onda -tre"></div>
+    </div>
+
+    <div class="card-box">
+
+        <h1 class="title">Sign Up</h1>
+
+        <div class="input-group">
+            <input required type="email" id="email-input" name="Email" autocomplete="off" class="input">
+            <label class="user-label">Email</label>
+        </div>
+
+        <div class="input-group">
+            <input required type="password" name="Password" autocomplete="off" class="input">
+            <label class="user-label">Password</label>
+        </div>
+     
+        <button class="button">Sign Up</button>
+
+        <div id="google-login"></div>
+
+        <p class="bottom-text -sign-up">Sei già un utente?<a href="login.html" rel="import">Login</a></p>
+
+    </div>
+    
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+</body>
+</html>

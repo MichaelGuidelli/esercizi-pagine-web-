@@ -1,0 +1,68 @@
+body {
+  background-image: url(https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg);
+  padding: 0 25%;
+  box-sizing: border-box;
+}
+
+#foto {
+  width: 200px;
+  height: 200px;
+}
+
+h1, h2 {
+  color: white;
+  font-weight: normal;
+}
+
+h2 {
+  display: inline-block;
+}
+
+#Trenta {
+  background-color: orange;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+#boolean {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 20px;
+}
+
+p {
+  display: inline-block;
+}
+
+#stella {
+  color: black;
+}
+
+.row {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding-bottom: 0.2%;
+}
+
+.row-2 {
+  background-color: white;
+  border: 1px solid black;
+  padding-bottom: 0.2%;
+}
+
+.row-left {
+  display: inline-block;
+  width: 50%;
+}
+
+.row-right{
+  display: inline-block;
+}
+
+.testo {
+  color: gray;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./app.js"></script>
+    <title>AGE CALCULATOR</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="input-div">
+          <div class="input-labeled">
+            <label for="day">day</label>
+            <input type="text" name="day" placeholder="DD" id="day-input" />
+            <p id="error-day" class="error-text"></p>
+          </div>
+
+          <div class="input-labeled">
+            <label for="month">month</label>
+            <input type="text" name="month" placeholder="MM" id="month-input" />
+            <p id="error-month" class="error-text"></p>
+          </div>
+
+          <div class="input-labeled">
+            <label for="year">year</label>
+            <input type="text" name="year" placeholder="YYYY" id="year-input" />
+            <p id="error-year" class="error-text"></p>
+          </div>
+        </div>
+
+        <hr />
+        <button
+          onclick="getValueOfInputDate(); return false"
+          class="button"
+          value=""
+        >
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
+
+        <div class="result-div">
+          <h2><span id="result-year" class="result-text">- -</span>years</h2>
+          <h2><span id="result-month" class="result-text">- -</span>months</h2>
+          <h2><span id="result-day" class="result-text">- -</span>days</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

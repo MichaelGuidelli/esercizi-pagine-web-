@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+:root {
+    --giallo: hsl(47, 88%, 63%);
+    --bianco: hsl(0, 0%, 100%);
+    --grigio: hsl(0, 0%, 50%);
+    --nero: hsl(0, 0%, 7%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--giallo);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card {
+    margin: 200px auto 0 auto;
+    background-color: var(--bianco);
+    width: 400px; height: 520px;
+    border-radius: 15px;
+    border: 1px solid var(--nero);
+    box-shadow: 10px 10px 0 0 var(--nero);
+    display: flex;
+    flex-direction: column
+}
+
+.card:hover {
+    box-shadow: 15px 15px 0 0 var(--nero);
+}
+
+.card > * {
+    margin: 0 0 15px 25px;
+}
+
+.illustrazione {
+    width: 350px; 
+    height: 220px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.learning-div {
+    width: 90px; height: 35px;
+    text-align: center;
+    background-color: var(--giallo);
+    border-radius: 5px;
+}
+
+.learning-p {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.published-p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--giallo);
+
+}
+
+.testo-p{
+    color: var(--grigio);
+}
+
+.avatar-div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    width: 30px;
+}
+
+.avatar-p {
+    margin: 5px 0 0 10px;
+    font-weight: bolder;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border-radius: 12px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#girl {
+    height: 30%;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.plan-container {
+    background-color: hsl(225, 100%, 98%);
+    height: 14%;
+    width: 75%;
+    display: flex;
+    margin: auto;
+    border-radius: 12px;
+}
+
+#music-icon {
+    height: 55px;
+    width: 55px;
+    padding: 12px;
+}
+
+#annual-plan {
+    color: hsl(223, 47%, 23%);
+    font-family: 'Outfit', sans-serif;
+}
+
+span {
+    color: hsl(224, 23%, 55%);
+}
+
+#change {
+    color: hsl(245, 75%, 52%);
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: None;
+    margin-left: 70px;
+}
+
+.proceed  {
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    height: 8%;
+    width: 75%;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#cancel {
+    color: hsl(223, 47%, 23%);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}

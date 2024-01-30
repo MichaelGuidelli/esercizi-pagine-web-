@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js'></script>
+    <title>Calcolatrice</title>
+</head>
+<body>
+    
+    <nav id="nav">
+        <h1 id="titolo">Calcolatrice</h1>
+    </nav>
+
+    <div class="div-calcolatrice" id="div-calcolatrice">
+        <div class="div-risultato" id="div-risultato">
+            <p id="risultato"></p>
+        </div>
+
+        <div class="div-tastiera">
+
+            <tr>
+                <td><input type="button" value="(" onclick="funzioneDisplayValore('(')"></td>
+                <td><input type="button" value=")" onclick="funzioneDisplayValore(')')"></td>
+                <td><input type="button" value="%" onclick="funzioneDisplayValore('%')"></td>
+                <td><input type="button" value="C" id="tasto-cancella" onclick="pulisciDisplay()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="funzioneDisplayValore('7')"></td>
+                <td><input type="button" value="8" onclick="funzioneDisplayValore('8')"></td>
+                <td><input type="button" value="9" onclick="funzioneDisplayValore('9')"></td>
+                <td><input type="button" value="/" onclick="funzioneDisplayValore('/')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="funzioneDisplayValore('4')"></td>
+                <td><input type="button" value="5" onclick="funzioneDisplayValore('5')"></td>
+                <td><input type="button" value="6" onclick="funzioneDisplayValore('6')"></td>
+                <td><input type="button" value="x" onclick="funzioneDisplayValore('x')"></td>
+            </tr>
+         
+            <tr>
+                <td><input type="button" value="1" onclick="funzioneDisplayValore('1')"></td>
+                <td><input type="button" value="2" onclick="funzioneDisplayValore('2')"></td>
+                <td><input type="button" value="3" onclick="funzioneDisplayValore('3')"></td>
+                <td><input type="button" value="-" onclick="funzioneDisplayValore('-')"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="0" onclick="funzioneDisplayValore('0')"></td>
+                <td><input type="button" value="." onclick="funzioneDisplayValore('.')"></td>
+                <td><input type="button" value="=" id="tasto-risultato" onclick="risolvo()"></td>
+                <td><input type="button" value="+" onclick="funzioneDisplayValore('+')"></td>
+            </tr>
+
+            <tr>
+                <td><button id="tasto-copia" onclick="copiaRisultato()">Copia Risultato</button></td>
+            </tr>
+
+        </div>
+
+    </div>
+</body>
+</html>

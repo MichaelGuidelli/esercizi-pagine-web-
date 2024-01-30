@@ -1,0 +1,94 @@
+:root {
+    --lime: #00dd01;
+    --nero: black;
+    --bianco: white;
+    --arancio: orange;
+    --rosso: red;
+}
+
+body {
+    background-image: url(data/background.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 1% 18%;
+}
+
+.black-box {
+    background-color:  var(--nero);
+    opacity: 0.8;
+    border-radius: 20px;
+    height: 850px;
+}
+
+.center {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.buttons {
+    background-color: var(--lime);
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+}
+
+.checkbox {
+    float: left;
+    margin-top: 2.9%;
+}
+
+.barra-gialla {
+    background-color: var(--arancio);
+    color: var(--arancio);
+    border-radius: 5px;
+    width: 350px;
+    height: 30px;
+}
+
+.barra-verde {
+    background-color: var(--lime);
+    color: var(--lime);
+    border-radius: 5px;
+    width: 600px;
+    height: 30px;
+}
+
+.barra-rossa {
+    background-color: var(--rosso);
+    color: var(--rosso);
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+h1 {
+    color: var(--lime);
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--bianco);
+    font-weight: bold;
+    
+}
+
+p {
+    color: var(--bianco); 
+    font-size: 15px;
+    font-weight: normal;
+}

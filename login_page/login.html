@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='app.js'></script>
+</head>
+<body>
+    
+    <div class="sfondo">
+        <div class="onda -uno"></div>
+        <div class="onda -due"></div>
+        <div class="onda -tre"></div>
+    </div>
+
+    <div class="card-box">
+
+        <h1 class="title">Login</h1>
+
+        <div class="input-group">
+            <input required type="email" id="email-input" name="Email" autocomplete="off" class="input">
+            <label class="user-label">Email</label>
+        </div>
+
+        <div class="input-group">
+            <input required type="password" name="Password" autocomplete="off" class="input">
+            <label class="user-label">Password</label>
+        </div>
+
+        <label id="label-check-box" for="checkBox">Ricordami?</label>
+        <input type="checkbox" id="checkbox">
+
+        <button class="button">Login</button>
+
+        <a id="password-dimenticata" href="reset_password.html">Password dimenticata?</a>
+
+        <div id="google-login"></div>
+
+        <p class="bottom-text -login">Hai bisogno di un account?<a href="sign_up_page.html" rel="import">Sign Up</a></p>
+
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        
+    </div>
+
+</body>
+</html>

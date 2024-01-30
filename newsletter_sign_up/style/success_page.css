@@ -1,0 +1,32 @@
+@import "./main.css";
+
+.success {
+    width: 52ch; height: 56vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 60px;
+    margin: 50px auto 40px 50px ;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
+p {
+    margin-left: 50px;
+    max-width: 370px;
+    color: var(--Gray);
+    font-weight: normal;
+}
+
+span {
+    color: var(--DarkSlateGrey);
+}
+
+button {
+    margin: 50px;
+    width: 372px;
+}
