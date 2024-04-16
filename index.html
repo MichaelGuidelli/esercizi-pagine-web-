@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERCENTUALI CARICHI</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <form id="form" onsubmit="retriveNumbers();return false">
+      <h2>Calcolatore carico allenante</h2>
+      <div class="input-box">
+        <label for="percentage">Percentuale:</label>
+        <input
+          type="number"
+          name="percentage"
+          id="percentage"
+          max="100"
+          required
+        />
+      </div>
+
+      <div class="input-box">
+        <label for="personal-record">Massimale:</label>
+
+        <select name="personal-records" id="personal-record" required>
+          <option value="">-------</option>
+          <option value="140">140-Squat</option>
+          <option value="85">85-Bench</option>
+          <option value="175">175-Deadlift</option>
+        </select>
+      </div>
+
+      <button type="submit" id="calculate-button">Calcola</button>
+
+      <button id="reset-button" type="reset">reset</button>
+
+      <h2 id="training-load-text">Carico allenante:</h2>
+      <h2 id="training-load-number"></h2>
+    </form>
+  </body>
+</html>
