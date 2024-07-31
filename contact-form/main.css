@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+    --lighter-gree: hsl(148, 38%, 91%);
+    --medium-green: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(186, 15%, 59%);
+    --darker-grey: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--lighter-gree);
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    background-color: var(--white);
+}
+
+.custom-card {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-danger-green {
+    color: var(--medium-green);
+}
+
+button {
+    background-color: var(--medium-green);
+    height: 40px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.form-text.error-message {
+    color: red;
+  }
+  
+
+  .form-control.error {
+    border-color: red;
+  }
+
+  .error {
+    border: 1px solid red !important;
+  }
+  
+  .card.error {
+    border: 1px solid red !important;
+  }
+  .toast-container {
+    z-index: 1055;
+  }
+
+.toast-container {
+    width: fit-content;
+    background-color: var(--darker-grey);
+    margin: 20px 0 0 0;
+    border-radius: 16px;
+}
+
+.toast-container {
+    color: var(--white);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid var(--medium-green);
+
+}
+
+.form-control:hover, .custom-card:hover {
+  border: 2px solid var(--medium-green);
+}
+
+#consent-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height:16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#consent-checkbox:checked {
+  background-color: var(--medium-green);
+  box-shadow: 0 0 5px var(--medium-green);
+}
+
+#consent-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 6px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.form-check-input:checked  {
+  background-color: var(--medium-green);
+  border: none;
+  box-shadow: 0 0 3px 1px var(--medium-green); 
+}
